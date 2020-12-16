@@ -18,6 +18,5 @@ byr:1937 iyr:2017 cid:147 hgt:183cm""";
 
         // assert
         assertEquals(new Passport("gry", 860033327, 2020, "#fffffd", 1937, 2017, 147, "183cm"), result);
-
     }
 }
