@@ -2,6 +2,8 @@ package nl.fontys;
 
 import java.util.Objects;
 
+import static java.lang.String.valueOf;
+
 public class Passport {
     private final String eyeColor;
     private final int passportId;
@@ -36,6 +38,11 @@ public class Passport {
                 eyeColor.equals(passport.eyeColor) &&
                 hairColor.equals(passport.hairColor) &&
                 height.equals(passport.height);
+    }
+
+    @Override
+    public String toString() {
+        return "Passport met ID:" + valueOf(this.passportId);
     }
 
     @Override
