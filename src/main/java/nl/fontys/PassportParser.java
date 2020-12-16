@@ -19,7 +19,6 @@ public class PassportParser {
     }
 
     private HashMap<String, String> extractPassportValuesPerKey(String passportString) {
-        // jammer joh, ga ik niet wijzigen :D
         var valuesPerKey = new HashMap<String, String>();
         var splits = passportString.split("[\r\n ]");
 
