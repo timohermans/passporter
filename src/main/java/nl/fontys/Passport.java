@@ -41,6 +41,11 @@ public class Passport {
     }
 
     @Override
+    public String toString() {
+        return "Passport met ID:" + valueOf(this.passportId);
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(eyeColor, passportId, expiryYear, hairColor, birthYear, issuerYear, countryId, height);
     }
