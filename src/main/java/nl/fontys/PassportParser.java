@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class PassportParser {
     public Passport parse(String passportString) {
+        // een willekeurige comment
         HashMap<String, String> valuesPerKey = extractPassportValuesPerKey(passportString);
 
         return new Passport(
