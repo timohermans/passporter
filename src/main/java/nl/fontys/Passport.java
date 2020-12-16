@@ -2,6 +2,8 @@ package nl.fontys;
 
 import java.util.Objects;
 
+import static java.lang.String.valueOf;
+
 public class Passport {
     private final String eyeColor;
     private final int passportId;
@@ -41,5 +43,10 @@ public class Passport {
     @Override
     public int hashCode() {
         return Objects.hash(eyeColor, passportId, expiryYear, hairColor, birthYear, issuerYear, countryId, height);
+    }
+
+    @Override
+    public String toString() {
+        return valueOf(this.passportId);
     }
 }
